@@ -1,0 +1,8 @@
+ANS TO THE QUES NO - 05
+
+SELECT d.Department_Name,
+		COUNT(e.Employee_ID) AS Number_Of_Employees
+FROM Departments d
+LEFT JOIN Employees e
+    ON d.Department_ID = e.Department_ID
+GROUP BY d.Department_Name;
