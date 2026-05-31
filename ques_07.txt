@@ -1,0 +1,11 @@
+ANS TO THE QUES NO - 07
+
+- CTE(Common Table Expression) হলো একটি temporary result set যা query-এর মধ্যে ব্যবহার করা যায়। 
+WITH AVGS AS
+(
+    SELECT AVG(Salary) AS AVG_SALARY
+    FROM Employees
+)
+SELECT First_Name
+FROM Employees
+WHERE Salary > (SELECT AVG_SALARY FROM AVGS);
