@@ -1,0 +1,12 @@
+ANS TO THE QUES NO - 01
+
+Primary key:
+	- একটি টেবিলের প্রতিটি রেকর্ডকে ইউনিকভাবে শনাক্ত করে।
+	- NULL হতে পারে না।
+	- একটি টেবিলে মাত্র একটি Primary Key থাকে।
+	- Duplicate value গ্রহণ করে না।
+Foreign Key:
+	- অন্য টেবিলের Primary Key-কে use করে।
+	- NULL হতে পারে ।
+	- একাধিক Foreign Key থাকতে পারে।
+	- Duplicate value গ্রহণ করতে পারে।
