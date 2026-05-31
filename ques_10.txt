@@ -1,0 +1,6 @@
+ANS TO THE QUES NO - 10
+
+SELECT DISTINCT l.City
+FROM Locations l
+JOIN Departments d
+    ON l.Location_ID = d.Location_ID;
