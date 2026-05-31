@@ -1,0 +1,11 @@
+ANS TO THE QUES NO - 08
+
+SELECT First_Name
+FROM Employees
+WHERE Salary <
+(
+    SELECT Salary
+    FROM Employees
+    WHERE First_Name = 'Steven'
+   	 	    AND Last_Name = 'King'
+ 		);
