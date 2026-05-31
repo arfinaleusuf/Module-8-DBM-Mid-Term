@@ -1,0 +1,28 @@
+ANS TO THE QUES NO - 06
+
+INNER JOIN: Only Matching Rows From Both Tables Without NULL.
+	Example:
+		SELECT e.First_Name, d.Department_Name
+FROM Employees e
+INNER JOIN Departments d
+ON e.Department_ID = d.Department_ID; 
+
+LEFT JOIN: All Employees, Even Without Department
+	Example:
+		SELECT e.First_Name, d.Department_Name
+FROM Employees e
+LEFT JOIN Departments d
+ON e.Department_ID = d.Department_ID;
+
+RIGHT JOIN: All Departments, Even Without Employees
+	Example:
+		SELECT e.First_Name, d.Department_Name
+FROM Employees e
+RIGHT JOIN Departments d
+ON e.Department_ID = d.Department_ID; 
+
+CROSS JOIN: All Possible Combinations Of Rows From Both Tables. 
+Example: 
+		SELECT e.First_Name, d.Department_Name
+FROM Employees e
+CROSS JOIN Departments d; 
