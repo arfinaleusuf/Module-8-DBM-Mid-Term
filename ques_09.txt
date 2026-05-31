@@ -1,0 +1,7 @@
+ANS TO THE QUES NO - 09
+
+SELECT d.Department_Name,
+    	   e.First_Name AS Employee_name
+FROM Departments d
+LEFT JOIN Employees e
+    ON d.Manager_ID = e.Employee_ID;
