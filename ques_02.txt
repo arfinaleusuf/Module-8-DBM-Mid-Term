@@ -1,0 +1,10 @@
+ANS TO THE QUES NO - 02
+
+- Self Join হলো একই টেবিলকে নিজের সাথে Join করা। 
+
+Example: 
+	SELECT e.FIRST_NAME AS Employee_Name,
+   e.MANAGER_ID AS Manager_Id
+FROM EMPLOYEES e
+JOIN EMPLOYEES m
+    		ON e.MANAGER_ID = m.EMPLOYEE_ID;
